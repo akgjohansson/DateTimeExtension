@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DateTimeExtension
 {
-    public class CountDays
+    public static class CountDays
     {
-        public int GetTotalWeekDays(DateTime today, DateTime endDay)
+        public static int GetTotalWeekDays(DateTime today, DateTime endDay)
         {
             int totalWeekDays = 0;
             int totalDays = Convert.ToInt32(Math.Round((endDay - today).TotalDays));
